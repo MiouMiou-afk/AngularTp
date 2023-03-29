@@ -1,0 +1,5 @@
+<header><h1>Liste des films</h1></header>
+<main>
+  <app-search-box (userInputEvent)="setUserInput($event)"></app-search-box>
+  <app-movie-list [userInput]="userInput"></app-movie-list>
+</main>

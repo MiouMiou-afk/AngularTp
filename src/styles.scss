@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+:root {
+  --silver: rgb(206, 190, 190);
+  --cambridge-blue: rgb(115, 158, 130);
+  --pale-dogwood: rgb(213, 185, 178);
+  --rose-taupe: rgb(162, 103, 105);
+  --chinese-violet: rgb(124, 88, 105);
+}
+
+@font-face {
+  font-family: "Lemon Milk";
+  src: url(assets/fonts/LEMONMILK-Bold.otf) format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}

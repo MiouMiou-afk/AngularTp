@@ -1,0 +1,10 @@
+<ng-container *ngIf="movies$">
+  <ng-container *ngIf="movies$ | async as movies">
+    <ul *ngIf="movies.length; else noMatch">
+      <li *ngFor="let movie of movies">
+        <app-movie-card [title]="movie.title" [id]="movie.id"></app-movie-card>
+      </li>
+    </ul>
+  </ng-container>
+</ng-container>
+<ng-template #noMatch> <div class="not-found">Pas de film</div> </ng-template>
